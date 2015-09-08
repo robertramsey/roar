@@ -1,0 +1,23 @@
+<template name="postsList">
+
+<div class="big-container">
+<div class="profile-info">
+ <div class="pic" style="background: url('{{image}}')">
+        <div class="inner"><span class="glyphicon glyphicon-camera upload-glyph"></span><input type="file" name="profileImageUpload" class="profileImageUpload"></div>
+  </div>
+</div>
+<div class="container">
+
+<div class="replybox">
+  <div class="replyfield box" contenteditable="true"></div>
+  	
+      <button class="btn btn-danger btn-lrg postbox">Post</button> 
+    <div class="fileUpload btn btn-primary" style="float: right">
+  	<span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+    <input type="file" name="imageUpload" class="upload myImageUpload">
+    </div>     
+</div>
+  {{> posts}}
+</div>
+</div>
+</template>

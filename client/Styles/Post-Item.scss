@@ -1,0 +1,115 @@
+$color_whisper: #f7f7fa;
+$color_mystic_approx: #e1e8ed;
+$silver: #c0c0c0;
+$color_cararra_approx: #ececec;
+$color_lucky_point_approx: #1e216b;
+
+.post {
+	padding: 0 10px 0 20px;
+	min-height: 140px;
+	background: $color_whisper;
+	border: 1px solid $color_mystic_approx;
+	border-top-width: 0;
+	overflow: hidden;
+	position: relative;
+	.animate {
+		transition: all 300ms 0ms ease-in;
+	}
+	&:hover {
+		background: $color_whisper;
+	}
+}
+.profile-pic {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 2px;
+	float: left;
+	width: 70px;
+	height: 70px;
+}
+.username {
+	font-weight: bold;
+	line-height: 140%;
+	font-size: 11pt;
+	margin-right: 5px;
+	margin-top: -2px;
+}
+.handle {
+	color: $silver;
+	margin-top: -2px;
+	margin-right: 5px;
+}
+.time {
+	color: $silver;
+	margin-top: -2px;
+	margin-right: 5px;
+}
+.post-text {
+	word-wrap: break-word;
+}
+.the-buttons {
+	float: left;
+	width: 600px;
+	overflow: hidden;
+}
+
+.header {
+	display: block;
+}
+
+.reply {
+	margin-right: 30px;
+}
+.repost {
+	margin-right: 30px;
+}
+.favorite {
+	margin-right: 30px;
+}
+.replybox {
+	background: $color_cararra_approx;
+	height: 175px;
+	padding: 20px 20px 0 20px;
+}
+.replyfield {
+	border: 1px solid $silver;
+	background: $color_whisper;
+	height: 100px;
+	border-radius: 3px;
+}
+.replybtn {
+	float: right;
+	margin-top: 15px;
+}
+.comment {
+	padding: 14px 10px 0 20px;
+	height: 80px;
+	border: 1px solid $color_mystic_approx;
+	background: $color_whisper;
+}
+.comment-pic {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	border-radius: 2px;
+	float: left;
+	width: 50px;
+	height: 50px;
+}
+.join {
+	height: 30px;
+	background: $color_cararra_approx;
+	padding: 5px 0 0 15px;
+}
+.repost-field {
+	height: 20px;
+	padding-left: 74px;
+}
+.top {
+	font-size: 12px;
+	word-spacing: -8px;
+	padding-left: 3px;
+	color: $color_lucky_point_approx;
+}
+.navbar {
+	background-color: $color_whisper;
+}

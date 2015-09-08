@@ -1,0 +1,17 @@
+<template name="userProfile">     
+<div class="big-container">
+<div class="profile-info">
+ <div class="pic" style="background: url('{{picture}}')">
+        
+  </div>
+<button class="btn btn-danger btn-large {{following}}">{{following}}</button>
+      <a href={{pathFor 'favorites'}} class="btn btn-primary btn-large">Favorites</a>
+</div>
+
+<div class="container">
+
+   
+</div>
+  {{> posts}}
+</div>
+</template>

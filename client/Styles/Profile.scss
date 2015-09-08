@@ -1,0 +1,41 @@
+$color_whisper: #f7f7fa;
+$silver: #c0c0c0;
+
+.profile-info {
+	float: left;
+	height: 200px;
+	background-color: $color_whisper;
+	padding: 10px 20px 0;
+}
+.pic {
+	width: 150px;
+	height: 150px;
+	background-size: 150px 150px;
+	background-repeat: no-repeat;
+	&:hover .inner {
+		width: 150px;
+		height: 150px;
+		background-color: $silver;
+		transition: 100ms;
+		opacity: 0.6;
+	}
+}
+.inner {
+	width: 150px;
+	height: 150px;
+	transition: 100ms;
+	opacity: 0;
+}
+.profileImageUpload {
+	width: 150px;
+	height: 150px;
+	opacity: 0;
+	position: absolute;
+}
+.upload-glyph {
+	margin: 45px 0 0 45px;
+	color: $color_whisper;
+	font-size: 60px;
+	position: absolute;
+	top: 60px;
+}

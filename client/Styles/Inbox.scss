@@ -1,0 +1,55 @@
+$silver: #c0c0c0;
+$color_mystic_approx: #e1e8ed;
+$color_whisper: #f7f7fa;
+$color_salem_approx: #008b34;
+
+.imgCont {
+	width: 100%;
+	float: left;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.messages {
+	float: left;
+	width: 300px;
+	height: 600px;
+	border: 1px solid $color_mystic_approx;
+	background: $silver;
+	overflow: auto;
+}
+.texts {
+	float: left;
+	width: 700px;
+	height: 600px;
+	border: 1px solid $color_mystic_approx;
+	border-left: 0;
+	background: $color_whisper;
+}
+.inner-texts {
+	padding: 0 15px;
+	overflow: auto;
+	height: 425px;
+}
+.messagetext {
+	max-width: 250px;
+	background: $color_salem_approx;
+	padding: 0 5px;
+	border-radius: 5px;
+	display: inline-block;
+}
+.inner-text {
+	margin: 2px 0;
+	color: $color_whisper;
+}
+.message {
+	width: 100%;
+	display: block;
+	float: left;
+	margin-top: 5px;
+}
+.inbox {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}

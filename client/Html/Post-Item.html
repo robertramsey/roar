@@ -1,0 +1,60 @@
+<template name="postItem">
+<div>
+    <div class="post" >
+      <div class="repost-field">
+        {{#if repostThere}}
+        <span class="glyphicon glyphicon-refresh top"> Reposted by {{reposter}}</span>
+        {{/if}}
+      </div>
+      <img class="profile-pic" src="{{pic}}"/>
+      <div class="header">
+        <span class="username">{{username}}</span>
+        <span class="handle"><a href={{pathFor 'userProfile' author=user.username}}>@{{username}}</a></span>
+        <span class="time">{{submitted}}</span>
+      </div>
+   <div class="the-post"> 
+     <p class="post-text">{{{body}}}</p>
+     
+   </div>
+   <div class="the-buttons">
+    <a href="#" role="button" data-toggle="collapse" data-target="#{{_id}}" class="reply" aria-expanded="false" aria-controls="#{{_id}}">
+      <span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> 
+    </a>
+ 
+    <a href="#" class="repost">
+      <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> 
+      <span class="count">{{reposts}}</span>
+    </a>
+        
+    <a href="#" class="favorite">
+      <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+      <span class="count">{{favorites}}</span> 
+    </a>
+    {{#if ownPost}}
+    <a href="#" class="delete">
+      <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+    </a>
+    {{/if}}   
+   </div>
+   <div class="imgCont">
+    <img class="inner-image" src="{{image}}">
+   </div>
+    <div class="repost-field"></div>
+  </div>
+  <div class="collapse" id="{{_id}}">
+     <div class="replybox">
+        <div class="replyfield box" contenteditable="true"></div>
+        <button class="btn btn-danger btn-lrg replybtn">
+            Reply
+        </button>
+         
+      </div>
+    {{#each comments}}
+        {{> commentItem}}
+    {{/each}}
+    <div class="join">
+        <a href="#">Join the conversation</a>
+    </div> 
+  </div>
+</div>
+</template>
