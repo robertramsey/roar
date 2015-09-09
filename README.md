@@ -11,7 +11,6 @@ Roar is a straightforward microblogging platform built on MeteorJS + Bootstrap. 
 #Status
 Roar is currently in Alpha at the moment. There are some bugs that still need ironing out, and it's not quite mobile friendly yet. 
 
-#License
 ========================================
 Roar is licensed under the MIT License
 ========================================
