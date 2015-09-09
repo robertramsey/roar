@@ -4,7 +4,6 @@ Template.messageModal.events({
     var x = [];
     var username = Meteor.user().username;
     var recipients = $('#recipient-name').val();
-    console.log(recipients);
     x.push(username, recipients);
     var message = {
       reciever: recipients,
