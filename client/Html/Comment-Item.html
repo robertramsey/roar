@@ -2,12 +2,14 @@
   <div class="comment">
     <img class="comment-pic" src="http://fee.org/files/imglib/20150414_leef150x150.jpg"/>
        <div class="header">
-        <span class="username">{{username}}</span>
-        <span class="handle"><a href={{pathFor 'userProfile' author=user.username}}>@{{username}}</a></span>
-        <span class="time">20h</span>
+          <span class="username">{{username}}</span>
+          <span class="handle">
+            <a href={{pathFor 'userProfile' author=user.username}}>@{{username}}</a>
+          </span>
+          <span class="time">20h</span>
        </div>
-      <div class="the-post"> 
-        <p class="post-text">{{comment}}</p>
+       <div class="the-post"> 
+          <p class="post-text">{{comment}}</p>
        </div>
     </div>
 </template>

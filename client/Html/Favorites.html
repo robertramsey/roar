@@ -1,16 +1,16 @@
 <template name="favorites">
-  <div class="big-container">
-<div class="profile-info">
- <div class="pic" style="background: url('{{image}}')">
-        <div class="inner"><span class="glyphicon glyphicon-camera upload-glyph"></span><input type="file" name="profileImageUpload" class="profileImageUpload"></div>
-        <button id="follow" class="btn btn-large">Follow</button>
-      <a href={{pathFor 'favorites'}} class="btn btn-primary btn-large">Favorites</a>
-  </div>
-</div>
-<div class="container">
-
-   
-</div>
-  {{> posts}}
-</div>
+	<div class="big-container">
+		<div class="profile-info">
+ 			<div class="pic" style="background: url('{{image}}')">
+        		<div class="inner">
+        			<span class="glyphicon glyphicon-camera upload-glyph"></span>
+        			<input type="file" name="profileImageUpload" class="profileImageUpload">
+        		</div>
+        		<button id="follow" class="btn btn-large">Follow</button>
+      			<a href={{pathFor 'favorites'}} class="btn btn-primary btn-large">Favorites</a>
+  			</div>
+		</div>
+		<div class="container"></div>
+  		{{> posts}}
+	</div>
 </template>

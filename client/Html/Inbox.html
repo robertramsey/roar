@@ -1,16 +1,16 @@
 <template name="inbox">
-  <div class="inbox">
-    <div class="messages">
-    {{#each messages}}
-      {{> messageItem}}
-    {{/each}}
+    <div class="inbox">
+        <div class="messages">
+            {{#each messages}}
+                {{> messageItem}}
+            {{/each}}
+        </div>
+        <div class="texts">
+            {{> textMessages}}
+            <div class="replybox">
+                <div class="replyfield" contenteditable="true"></div>
+                <button class="btn btn-default btn-lrg send-text">Send</button>      
+            </div>
+        </div>
     </div>
-    <div class="texts">
-    {{> textMessages}}
-    <div class="replybox">
-      <div class="replyfield" contenteditable="true"></div>
-        <button class="btn btn-default btn-lrg send-text">Send</button>      
-      </div>
-    </div>
-  </div>
 </template>
