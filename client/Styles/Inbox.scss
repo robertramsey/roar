@@ -1,7 +1,7 @@
 $silver: #c0c0c0;
-$color_mystic_approx: #e1e8ed;
+$color_mystic: #e1e8ed;
 $color_whisper: #f7f7fa;
-$color_salem_approx: #008b34;
+$color_salem: #008b34;
 
 .imgCont {
 	width: 100%;
@@ -14,7 +14,7 @@ $color_salem_approx: #008b34;
 	float: left;
 	width: 300px;
 	height: 600px;
-	border: 1px solid $color_mystic_approx;
+	border: 1px solid $color_mystic;
 	background: $silver;
 	overflow: auto;
 }
@@ -22,7 +22,7 @@ $color_salem_approx: #008b34;
 	float: left;
 	width: 700px;
 	height: 600px;
-	border: 1px solid $color_mystic_approx;
+	border: 1px solid $color_mystic;
 	border-left: 0;
 	background: $color_whisper;
 }
@@ -33,7 +33,7 @@ $color_salem_approx: #008b34;
 }
 .messagetext {
 	max-width: 250px;
-	background: $color_salem_approx;
+	background: $color_salem;
 	padding: 0 5px;
 	border-radius: 5px;
 	display: inline-block;

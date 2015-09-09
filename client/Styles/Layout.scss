@@ -1,9 +1,9 @@
 //colors
-$color_pelorous_approx: #3e9eca;
+$color_pelorous: #3e9eca;
 
 body {
 	padding-top: 55px;
-	background-color: $color_pelorous_approx;
+	background-color: $color_pelorous;
 }
 .big-container {
 	margin-right: auto;
@@ -46,4 +46,12 @@ a:hover {
 	text-decoration: none;
 }
 
-// @import 'bootstrap';
+.roar-logo {
+	height: 75px;
+	width: 75px
+}
+
+.navbar-brand {
+	padding-top: 0px;
+}
+

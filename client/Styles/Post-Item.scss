@@ -1,14 +1,14 @@
 $color_whisper: #f7f7fa;
-$color_mystic_approx: #e1e8ed;
+$color_mystic: #e1e8ed;
 $silver: #c0c0c0;
-$color_cararra_approx: #ececec;
-$color_lucky_point_approx: #1e216b;
+$color_cararra: #ececec;
+$color_lucky_point: #1e216b;
 
 .post {
 	padding: 0 10px 0 20px;
 	min-height: 140px;
 	background: $color_whisper;
-	border: 1px solid $color_mystic_approx;
+	border: 1px solid $color_mystic;
 	border-top-width: 0;
 	overflow: hidden;
 	position: relative;
@@ -67,7 +67,7 @@ $color_lucky_point_approx: #1e216b;
 	margin-right: 30px;
 }
 .replybox {
-	background: $color_cararra_approx;
+	background: $color_cararra;
 	height: 175px;
 	padding: 20px 20px 0 20px;
 }
@@ -84,7 +84,7 @@ $color_lucky_point_approx: #1e216b;
 .comment {
 	padding: 14px 10px 0 20px;
 	height: 80px;
-	border: 1px solid $color_mystic_approx;
+	border: 1px solid $color_mystic;
 	background: $color_whisper;
 }
 .comment-pic {
@@ -97,7 +97,7 @@ $color_lucky_point_approx: #1e216b;
 }
 .join {
 	height: 30px;
-	background: $color_cararra_approx;
+	background: $color_cararra;
 	padding: 5px 0 0 15px;
 }
 .repost-field {
@@ -108,7 +108,7 @@ $color_lucky_point_approx: #1e216b;
 	font-size: 12px;
 	word-spacing: -8px;
 	padding-left: 3px;
-	color: $color_lucky_point_approx;
+	color: $color_lucky_point;
 }
 .navbar {
 	background-color: $color_whisper;
