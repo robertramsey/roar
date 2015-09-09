@@ -1,7 +1,8 @@
 <template name="userProfile">     
 	<div class="big-container">
 		<div class="profile-info">
- 			<div class="pic" style="background: url('{{picture}}')"></div>
+ 			<div class="pic" style="background: url('{{picture}}'); background-size: 150px;"></div>
+ 			<h4 class="profile-user">{{username}}</h4>
 			{{#if currentUser}}
 				<button class="btn btn-danger btn-large {{following}}">{{following}}</button>
 			{{/if}}
