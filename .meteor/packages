@@ -13,6 +13,5 @@ ian:accounts-ui-bootstrap-3
 cfs:standard-packages
 cfs:gridfs
 reywood:publish-composite
-smeevil:session-store
 momentjs:moment
 fourseven:scss
