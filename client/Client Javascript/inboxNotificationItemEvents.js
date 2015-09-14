@@ -1,7 +1,5 @@
-// Template.inboxNotificationItem.events({
-// 	'click .inbox-notification': function(e) {
-// 		e.preventDefault();
-// 		var id = this.messageId;
-//     	SessionStore.set('textsLoadSession', id);
-// 	}
-// });
+Template.inboxNotificationItem.events({
+  'click a': function() {
+    Inbox.update(this._id, {$set: {read: true}});
+  }
+});
