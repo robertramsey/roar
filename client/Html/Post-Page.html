@@ -1,0 +1,17 @@
+<template name="postPage">
+	<div class="big-container single">
+		<div class="container"> 
+			{{#each posts}}
+				{{> postPageItem}}
+			{{/each}}
+  			{{#each comments}}
+        		{{> commentItem}}
+        	{{/each}}
+        	<div class="replybox">
+        		<div class="replyfield {{_id}} box" contenteditable="true"></div>
+        		<button class="btn btn-danger btn-lrg commentSubmit replybtn">Reply</button>
+    		</div>
+		</div>
+	</div>
+
+</template>
