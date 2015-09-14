@@ -1,11 +1,19 @@
 Template.postItem.events({
-  'click .favorite': function(e) {
+  'click #can-favorite': function(e) {
    e.preventDefault();
    var favorite = {
     postId: this._id,
     username: this.username
    };
    Meteor.call('favorite', favorite);
+  },
+  'click #unfavorite': function(e) {
+   e.preventDefault();
+   var unfavorite = {
+    postId: this._id,
+    username: this.username
+   };
+   Meteor.call('unfavorite', unfavorite);
   },
   'click .repost': function(e) {
     e.preventDefault();
@@ -18,7 +26,6 @@ Template.postItem.events({
   'click .commentSubmit': function(e) {
     e.preventDefault();
     var cdContent = $('.' + this._id).html();
-    console.log(cdContent);
     var reply = {
       comment: cdContent,
       postId: this._id,

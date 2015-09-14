@@ -26,6 +26,13 @@ Template.postItem.helpers({
     } else {
       return false
     }
+  },
+  favorited: function() {
+    if(_.indexOf(Meteor.user().profile.favorited, this._id) === -1) {
+      return "can-favorite"
+    } else {
+      return "unfavorite"
+    }
   }
       
 });
