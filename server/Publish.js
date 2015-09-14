@@ -1,7 +1,7 @@
 Accounts.onCreateUser(function(options, user) {	
 	if (options.profile)
     user.profile = options.profile;
-	user.profile = {picture: "img/default.png", following: []};
+	user.profile = {picture: "http://localhost:3000/img/default.png", following: []};
 	return user;
 });
 
@@ -21,8 +21,8 @@ Meteor.publish('favorites', function (username){
 	return Posts.find({favoriters: username});
 });
 
-Meteor.publish('tweets', function (_id) {
-	return Posts.find({_id: _id});
+Meteor.publish('singlepost', function (_id) {
+	return [Posts.find({_id: _id}), Comments.find({postId: _id})];
 });
 
 Meteor.publish('hashtags', function (hashtag) {

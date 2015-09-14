@@ -7,7 +7,7 @@ Template.postsList.events({
     var upload = Images.insert(image);
     var post = {
       body: cdContent,
-      image: "/cfs/files/images/" + upload._id,
+      image: "http://localhost:3000/cfs/files/images/" + upload._id,
       imageId: upload._id,
       profileImage: Meteor.user().profile.picture.image
     }
@@ -25,8 +25,14 @@ Template.postsList.events({
     var image = $(".profileImageUpload").get(0).files[0];
     var upload = Images.insert(image);
     var pic = {
-      picture: "/cfs/files/images/" + upload._id
+      picture: "http://localhost:3000/cfs/files/images/" + upload._id
     }
     Meteor.call('updatePicture', pic);
+  },
+  'keydown .box': function(e) {
+    var limit = 139;
+    if(e.which != 8 && $('.box').text().length > limit) {
+      e.preventDefault();
+    }
   }
 });
