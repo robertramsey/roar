@@ -1,5 +1,4 @@
 <template name="postItem">
-    <div>
         <div class="post" >
             <div class="repost-field">
                 {{#if repostThere}}
@@ -23,8 +22,8 @@
                     <span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> 
                     <span class="count">{{reposts}}</span>
                 </a>
-                <a href="#" class="favorite">
-                    <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                <a href="#" id="{{favorited}}" class="favorite">
+                    <span class="glyphicon glyphicon-star {{favorited}}" aria-hidden="true"></span>
                     <span class="count">{{favorites}}</span> 
                 </a>
                 {{#if ownPost}}
@@ -40,15 +39,14 @@
         </div>
         <div class="collapse" id="{{_id}}">
             <div class="replybox">
-                <div class="replyfield box" contenteditable="true"></div>
-                <button class="btn btn-danger btn-lrg replybtn">Reply</button>
+                <div class="replyfield {{_id}} box" contenteditable="true"></div>
+                <button class="btn btn-danger btn-lrg commentSubmit replybtn">Reply</button>
             </div>
             {{#each comments}}
                 {{> commentItem}}
             {{/each}}
             <div class="join">
-                <a href="#">Join the conversation</a>
+                <a href="{{pathFor 'postPage'}}">Join the conversation</a>
             </div> 
         </div>
-    </div>
 </template>
