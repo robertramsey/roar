@@ -3,6 +3,7 @@ $color_mystic: #e1e8ed;
 $silver: #c0c0c0;
 $color_cararra: #ececec;
 $color_lucky_point: #1e216b;
+$color_sienna: #FFB100;
 
 .post {
 	padding: 0 10px 0 20px;
@@ -57,15 +58,24 @@ $color_lucky_point: #1e216b;
 	display: block;
 }
 
-.reply {
+.the-post {
+	float: right;
+	width: 85%
+}
+
+.the-comment {
+	float: right;
+	width: 88.7%
+}
+
+.favorite, .repost, .reply {
 	margin-right: 30px;
 }
-.repost {
-	margin-right: 30px;
+
+.unfavorite {
+	color: $color_sienna;
 }
-.favorite {
-	margin-right: 30px;
-}
+
 .replybox {
 	background: $color_cararra;
 	height: 175px;
