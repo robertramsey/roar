@@ -36,3 +36,8 @@ Meteor.publish('notifications', function () {
 Meteor.publish('inboxNotifications', function () {
 	return Inbox.find({recipient: this.userId});
 });
+
+Meteor.publish('users', function () {
+	return Meteor.users.find();
+});
+
