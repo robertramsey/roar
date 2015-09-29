@@ -1,0 +1,17 @@
+<template name="searchBox">
+<div class="search-container">
+	<span class="glyphicon glyphicon-search"></span>
+    {{> esInput index="users" placeholder="Search Users..." }}
+
+    <ul class="nav navbar-nav">
+        {{#esEach index="users"}}
+        <a href="{{pathFor 'userProfile'}}">
+            <li class="search-results dropdown">
+            	<img style="height: 40px" src="{{profile.picture}}">
+            	<span>{{username}}</span>
+            </li>
+        </a>
+        {{/esEach}}
+    </ul>
+</div>
+</template>
