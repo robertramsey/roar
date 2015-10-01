@@ -12,7 +12,7 @@ $color_salem: #008b34;
 }
 .messages {
 	float: left;
-	width: 300px;
+	width: 330px;
 	height: 600px;
 	border: 1px solid $color_mystic;
 	background: $silver;
@@ -20,7 +20,7 @@ $color_salem: #008b34;
 }
 .texts {
 	float: left;
-	width: 700px;
+	width: 670px;
 	height: 600px;
 	border: 1px solid $color_mystic;
 	border-left: 0;
@@ -52,4 +52,9 @@ $color_salem: #008b34;
 	margin-left: auto;
 	margin-right: auto;
 	width: 1000px;
+}
+
+.send-text {
+	float: right;
+	margin-top: 5px;
 }

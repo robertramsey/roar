@@ -12,8 +12,9 @@ Template.messageModal.events({
   };
   Meteor.call('sendmessagetest', message, function(error, result) {
     if (result) {
+      console.log(result);
       var text = {
-        messageId: result._id,
+        messageId: result,
         recipient: message.recipient,
         body: message.body
       };

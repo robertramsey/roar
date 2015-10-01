@@ -1,6 +1,6 @@
 Template.inbox.helpers({
   messages: function() {
-    return Messages.find();
+    return Messages.find({}, {sort: {submitted: 1}});
   }
 });
 

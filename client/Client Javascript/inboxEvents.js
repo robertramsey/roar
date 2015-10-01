@@ -7,7 +7,7 @@ Template.inbox.events({
   'click .send-text': function(e) {
     e.preventDefault();
 
-    var cdContent = $('.replyfield').html();
+    var cdContent = $('.replyfield').val();
     var id = Router.current().params.url;
     var participants = Messages.findOne({_id: id}, {fields: {recipient: 1}});
     var user = Meteor.user().username;
@@ -21,6 +21,6 @@ Template.inbox.events({
 
     Meteor.call('replytext', text);
     $('.inner-texts').scrollTop($('.inner-texts').prop("scrollHeight"));
-    $('.replyfield').html("");
+    $('.replyfield').val("");
   }
 });
