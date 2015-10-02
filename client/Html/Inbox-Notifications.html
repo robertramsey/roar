@@ -1,10 +1,10 @@
 <template name="inboxNotifications">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
         Inbox
-        <!-- {{#if inboxCount}}
-        <span class="badge badge-inverse">{{inboxCount}}</span> -->
-            <span class="badge badge-inverse">1</span>
-        <!-- {{/if}} -->
+        {{#if inboxCount}}
+            <span class="badge badge-inverse">{{inboxCount}}</span>
+            
+        {{/if}}
         <b class="caret"></b>
     </a>
     <ul class="notification dropdown-menu">
